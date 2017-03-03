@@ -1,0 +1,11 @@
+cmudict-en-us.dict
+en-us-phone.lm.bin
+en-us.lm.bin
+en-us/README
+en-us/feat.params
+en-us/mdef
+en-us/means
+en-us/noisedict
+en-us/sendump
+en-us/transition_matrices
+en-us/variances

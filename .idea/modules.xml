@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PebbleAlexa.iml" filepath="$PROJECT_DIR$/PebbleAlexa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aars/aars.iml" filepath="$PROJECT_DIR$/aars/aars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alexa/alexa.iml" filepath="$PROJECT_DIR$/alexa/alexa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alexaandroid/alexaandroid.iml" filepath="$PROJECT_DIR$/alexaandroid/alexaandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/models/models.iml" filepath="$PROJECT_DIR$/models/models.iml" />
+    </modules>
+  </component>
+</project>

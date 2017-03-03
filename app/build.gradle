@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'MyKey'
+            keyPassword 'feedthefish'
+            //storeFile file('E:/Dropbox/devel/android/Keygen.keystore')
+            storeFile file('C:/Users/idave/Dropbox/devel/android/Keygen.keystore')
+            storePassword 'feedthefish'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "sdsoft.pebblealexa"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':aars')
+    compile project(':models')
+    compile project(':alexaandroid')
+    //androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+    //    })
+    compile 'com.writingminds:FFmpegAndroid:0.3.2'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    //testCompile 'junit:junit:4.12'
+    compile 'com.getpebble:pebblekit:4.0.1'
+   // compile 'com.willblaschko.android.alexa:AlexaAndroid:2.4.2'
+    //
+}
+
